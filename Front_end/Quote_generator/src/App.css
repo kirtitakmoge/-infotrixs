@@ -1,0 +1,170 @@
+.App {
+  font-family: ui-sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.header {
+  flex: 0 0 2%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: changeColor; /* Name of the animation */
+  animation-duration: 2s; /* Duration of the animation */
+  animation-iteration-count: infinite; /* Animation repeats infinitely */
+  animation-direction: alternate; /* Reverse animation direction each cycle */
+  }
+  .logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+.p-author
+{
+  text-align: right;
+}
+#trend-div{
+  text-align: left;
+
+}
+h2{
+  margin-right: 10px;
+}
+.home {
+  background-color: #fff;
+  align-items: flex-start;
+  cursor: pointer;
+  border:2px solid hsl(0, 59%, 77%);
+  border-radius: 10px;
+  padding:7px 12px;
+  margin-right: 3500px;
+  height: 40px;
+}
+
+
+@keyframes changeColor {
+  0% {
+    background-color: #a23d3d; /* Start color */
+  }
+  50% {
+    background-color: #0c4b8a; /* Midway color */
+  }
+  100% {
+    background-color: #967575; /* End color (same as start for a loop effect) */
+  }
+}
+/* App.css (or any appropriate CSS file) */
+.like-btn,.trending-quote-btn,.new-quote-btn{
+  background-color :#0c4b8a7f;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border:2px solid hsl(0, 59%, 77%);
+  border-radius: 10px;
+  padding:7px 12px;
+  
+}
+.like-btn:hover,.new-quote-btn:hover,.trending-quote-btn:hover{
+  background-color: #df6d6d;
+ padding:5px;
+
+}
+.q-search
+{
+  
+  margin-top: 10px;
+  padding: 9px;
+  border:2px solid #df6d6d;
+  border-radius: 10px;
+}
+.q-search:hover{
+  cursor: pointer;
+  background-color: #df6d6d;
+  
+}
+.userInput{
+  margin-top: 50px;
+  padding: 5px;
+  padding: 5px;
+  border:3px solid #df6d6d;
+  border-radius: 10px;
+  width:200px;
+}
+.quote-box {
+  background-color:#fff;
+  border: 4px solid #e69898;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px; 
+    width: 400px;
+}
+
+
+.quote-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #df6d6d;
+ padding-top: 0px;
+}
+
+.quote-box p {
+  font-size: 18px;
+  color: #0e0404;
+  margin-bottom: 5px;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+.main-content {
+  flex: 1;
+  position: relative; 
+}
+.footer {
+  flex: 0 0 2%; 
+  background-color: #a23c3c; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
